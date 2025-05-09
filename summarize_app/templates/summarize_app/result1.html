@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Summary Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            padding: 40px;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 900px;
+            margin: auto;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: hsl(0, 0%, 21%);
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            background: #f1f1f1;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📄 Summary of Provided Link</h1>
+
+        <div class="section">
+            <h2>🔗 URL:</h2>
+            <a href="{{ url }}" target="_blank">{{ url }}</a>
+        </div>
+
+        <div class="section">
+            <h2>✂️ Summarized Text:</h2>
+            <pre>{{ summary }}</pre>
+        </div>
+
+        <div class="section">
+            <h2>🧾 Original Text Content:</h2>
+            <pre>{{ original }}</pre>
+        </div>
+
+        
+
+        <a href="{% url 'index' %}" class="btn">🔄 Try Another URL</a>
+    </div>
+</body>
+</html>
