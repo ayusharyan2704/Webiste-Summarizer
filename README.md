@@ -35,12 +35,12 @@ cd website-summarizer
 
 2. Create and Activate Virtual Environment
 
-### Windows
-python -m venv env
+Windows : python -m venv env
+
 env\Scripts\activate
 
-### macOS/Linux
-python3 -m venv env
+macOS/Linux : python3 -m venv env
+
 source env/bin/activate
 
 3. Install Dependencies
@@ -74,14 +74,19 @@ What Happens:
 📦 Example requirements.txt
 
 Django>=5.2
+
 transformers>=4.41.2
+
 torch>=2.3.0
+
 beautifulsoup4>=4.12.3
+
 requests>=2.31.0
 
 📄 License
 
 This project is licensed under the MIT License — feel free to use and modify it for personal or commercial purposes.
+
 🙌 Credits
 
     Hugging Face — Pre-trained BART Model
