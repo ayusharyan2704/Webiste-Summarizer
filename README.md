@@ -35,11 +35,11 @@ cd website-summarizer
 
 2. Create and Activate Virtual Environment
 
-# Windows
+### Windows
 python -m venv env
 env\Scripts\activate
 
-# macOS/Linux
+### macOS/Linux
 python3 -m venv env
 source env/bin/activate
 
