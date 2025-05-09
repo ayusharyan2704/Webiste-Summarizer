@@ -27,22 +27,70 @@ A Django-based web application that allows users to input a URL of a public webs
 
 ---
 
-## 📁 Folder Structure
-bart_summarizer/
-├── bart_summarizer/
-│ ├── init.py
-│ ├── settings.py
-│ ├── urls.py
-│ └── wsgi.py
-├── summarize_app/
-│ ├── init.py
-│ ├── urls.py
-│ ├── views.py
-│ ├── templates/
-│ │ └── summarize_app/
-│ │ ├── index.html
-│ │ └── result.html
-├── manage.py
-├── requirements.txt
-└── README.md
+## ⚙️ How to Run Locally
+1. Clone the Repository
+
+git clone https://github.com/your-username/website-summarizer.git
+cd website-summarizer
+
+2. Create and Activate Virtual Environment
+
+# Windows
+python -m venv env
+env\Scripts\activate
+
+# macOS/Linux
+python3 -m venv env
+source env/bin/activate
+
+3. Install Dependencies
+
+pip install -r requirements.txt
+
+4. Run the Django Server
+
+python manage.py runserver
+
+5. Open in Browser
+
+Go to: http://127.0.0.1:8000
+
+##📝 Example Use Case
+
+Input URL:
+
+https://www.ndtv.com/india-news/operation-sindoor-what-is-anti-tank-guided-missile-india-used-to-destroy-pakistani-posts-across-loc-8368992
+
+What Happens:
+
+    Text is scraped and parsed from the webpage.
+
+    Summarized using the BART model.
+
+    Both original and summarized versions are displayed.
+
+    Option to download the summary as a .txt file.
+
+📦 Example requirements.txt
+
+Django>=5.2
+transformers>=4.41.2
+torch>=2.3.0
+beautifulsoup4>=4.12.3
+requests>=2.31.0
+
+📄 License
+
+This project is licensed under the MIT License — feel free to use and modify it for personal or commercial purposes.
+🙌 Credits
+
+    Hugging Face — Pre-trained BART Model
+
+    BeautifulSoup4 — Web Scraping
+
+    Django — Backend Framework
+
+    All contributors and testers 🙏
+
+
 
