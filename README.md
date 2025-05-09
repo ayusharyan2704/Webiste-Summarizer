@@ -26,11 +26,11 @@ A Django-based web application that allows users to input a URL of a public webs
 | Deployment Ready| Localhost / Render / Heroku |
 
 ---
-#Query :
+# Query :
 ![image](https://github.com/user-attachments/assets/d85a1107-222c-46c2-a63e-f9ce8b0bb1f8)
-#Summary Result :
+# Summary Result :
 ![image](https://github.com/user-attachments/assets/3bca1fc7-8d02-4790-9b9b-3d018a6eaffa)
-#Result in Dark Mode :
+# Result in Dark Mode :
 ![image](https://github.com/user-attachments/assets/8825d131-7458-4094-94d4-8bd9fcd171f3)
 
 
